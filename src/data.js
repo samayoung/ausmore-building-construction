@@ -17,12 +17,12 @@ export const projects = [
     title: 'Church of Jesus Christ of Latter-day Saints',
     category: 'Construction',
     status: 'Completed',
-    location: 'Nigeria',
+    location: 'Oko Ita, Akwa Ibom State',
     year: '',
     description:
       'A completed church construction project delivered with a focus on quality workmanship, functional planning, structural integrity and a refined architectural finish.',
     image: img('church-latter-day-saints'),
-    images: [img('church-latter-day-saints', 2), img('church-latter-day-saints', 3)],
+    images: [2, 3, 4, 5].map((n) => img('church-latter-day-saints', n)),
   },
   {
     slug: 'judges-quarters',
