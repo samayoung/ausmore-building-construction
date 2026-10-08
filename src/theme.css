@@ -20,3 +20,9 @@ section + section,main > section + a{border-top:1px solid rgba(7,17,31,.08)}
 /* Logo size */
 .logo img{height:46px;width:auto}
 @media (max-width:900px){.logo img{height:38px}}
+
+/* Logo in preloader and footer (text stays in the HTML for screen readers) */
+.pre .pw,.ft .pw{font-size:0;letter-spacing:0;display:block;background:url(/images/logo/ausmore-logo.png) center/contain no-repeat}
+.pre .pw{width:min(340px,72vw);aspect-ratio:2036/772;margin:0 auto}
+.pre .eyebrow{display:none}
+.ft .pw{width:260px;height:110px;margin-bottom:8px;background:var(--navy) url(/images/logo/ausmore-logo.png) center/80% no-repeat}
