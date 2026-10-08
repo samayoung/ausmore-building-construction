@@ -16,3 +16,7 @@ section + section,main > section + a{border-top:1px solid rgba(7,17,31,.08)}
 .fl{color:#4a5a73}
 .fl a:hover{color:var(--red)}
 .copy{border-top-color:rgba(7,17,31,.12)}
+
+/* Logo size */
+.logo img{height:46px;width:auto}
+@media (max-width:900px){.logo img{height:38px}}
