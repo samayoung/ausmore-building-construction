@@ -1,0 +1,18 @@
+/* All-white page theme. Hero and project-detail banners keep their image treatment. */
+:root{--off:#fff;--neu:#fff}
+body{background:#fff}
+section + section,main > section + a{border-top:1px solid rgba(7,17,31,.08)}
+.dark{background:#fff;color:var(--navy)}
+.dark .eyebrow{color:#5a6b85}
+.hero.dark,.dhero.dark{background:var(--navy);color:#fff}
+.hero .eyebrow,.dhero .eyebrow{color:#d5deec}
+.steps li{border-top-color:rgba(7,17,31,.25)}
+.steps p{color:#4a5a73}
+.cgrid{border-top-color:rgba(7,17,31,.25)}
+.btn.big:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+.cgrid a:hover{color:var(--red)}
+.ft{background:#fff;color:var(--navy);border-top:1px solid rgba(7,17,31,.12)}
+.ft .eyebrow{color:#5a6b85}
+.fl{color:#4a5a73}
+.fl a:hover{color:var(--red)}
+.copy{border-top-color:rgba(7,17,31,.12)}
