@@ -1,0 +1,14 @@
+/* Leadership (CEO) extras: bio, name tag, no sideways scroll while the slide-in is pending */
+#leadership{overflow-x:clip}
+.ceo-ph{grid-row:1/3}
+.ceo-tx{align-self:end}
+.ceo-bio{align-self:start;max-width:640px}
+.ceo-bio .ceo-lead{font-size:clamp(20px,2.4vw,32px);font-weight:600;letter-spacing:-.02em;line-height:1.2;margin-bottom:16px}
+.ceo-bio p{font-size:clamp(15px,1.3vw,18px);margin-bottom:12px;color:#33445d}
+.ceo-bio p.ceo-lead{color:var(--navy)}
+.ceo-bio.rv{transform:translateX(90px);transition-duration:1.1s;transition-delay:.24s}
+.ceo-bio.rv.in{transform:none}
+.arc{font-family:var(--serif);font-style:italic;font-weight:400;font-size:.5em;letter-spacing:0;white-space:nowrap;color:var(--blue)}
+.ceo.nophoto .ceo-tx,.ceo.nophoto .ceo-bio{grid-column:1}
+@media (max-width:700px){.ceo-ph{grid-row:1}.ceo-tx{align-self:center}.ceo-bio{grid-column:1/-1}}
+@media (prefers-reduced-motion:reduce){.ceo-bio.rv{transform:none}}
