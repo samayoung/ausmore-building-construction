@@ -292,7 +292,7 @@ function Leadership() {
         <div className="ceo-bio rv">
           <p className="ceo-lead">He designs it. He builds it. He answers for it.</p>
           <p>Augustine Udim is an architect with years of hands-on experience, leading Ausmore on one standard: what is drawn must be what gets built, and built properly.</p>
-          <p>From places of worship to government developments, he runs every project with discipline, clear communication and full accountability, from the first sketch to the final handover.</p>
+          <p>Across residential, commercial, religious and government projects, he runs every job with discipline, clear communication and full accountability, from the first sketch to the final handover.</p>
         </div>
       </div>
     </section>
