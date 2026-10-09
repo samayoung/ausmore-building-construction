@@ -11,6 +11,7 @@ export const company = {
 
 const img = (slug, n) => `/images/projects/project-${slug}${n ? `-${n}` : ''}.jpg`
 
+/* To change which photo shows first: set `image` to another number and list the rest in `images`. */
 export const projects = [
   {
     slug: 'church-latter-day-saints',
@@ -33,20 +34,20 @@ export const projects = [
     year: '',
     description:
       'An ongoing government development project focused on quality workmanship, structural integrity, efficient project management and timely delivery in accordance with development standards.',
-    image: img('judges-quarters'),
-    images: [2, 3, 4].map((n) => img('judges-quarters', n)),
+    image: img('judges-quarters', 4),
+    images: [0, 2, 3].map((n) => img('judges-quarters', n)),
   },
   {
     slug: 'church-renovation',
     title: 'Church Extension & Renovation',
     category: 'Renovation',
     status: 'Completed',
-    location: 'Four Lanes, Uyo, Akwa Ibom State',
+    location: 'Four Lean, Uyo, Akwa Ibom State',
     year: '',
     description:
       'A church extension and renovation project involving the improvement and expansion of an existing worship environment while maintaining functionality, architectural character and quality workmanship.',
-    image: img('church-renovation'),
-    images: [2, 3, 4, 5].map((n) => img('church-renovation', n)),
+    image: img('church-renovation', 4),
+    images: [0, 2, 3, 5].map((n) => img('church-renovation', n)),
   },
 ]
 
