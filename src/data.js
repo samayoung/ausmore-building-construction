@@ -34,7 +34,7 @@ export const projects = [
     description:
       'An ongoing government development project focused on quality workmanship, structural integrity, efficient project management and timely delivery in accordance with development standards.',
     image: img('judges-quarters'),
-    images: [img('judges-quarters', 2), img('judges-quarters', 3)],
+    images: [2, 3, 4].map((n) => img('judges-quarters', n)),
   },
   {
     slug: 'church-renovation',
