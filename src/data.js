@@ -46,7 +46,7 @@ export const projects = [
     description:
       'A church extension and renovation project involving the improvement and expansion of an existing worship environment while maintaining functionality, architectural character and quality workmanship.',
     image: img('church-renovation'),
-    images: [img('church-renovation', 2), img('church-renovation', 3)],
+    images: [2, 3, 4, 5].map((n) => img('church-renovation', n)),
   },
 ]
 
