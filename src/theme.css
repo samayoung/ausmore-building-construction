@@ -40,10 +40,15 @@ section + section,main > section + a{border-top:1px solid rgba(7,17,31,.08)}
 .ow figcaption{margin-top:10px;color:#5a6b85}
 @media (max-width:900px){.ow-grid{grid-template-columns:1fr 1fr;gap:12px}}
 
-/* Leadership: CEO only */
-.ceo{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:clamp(32px,6vw,96px);align-items:end}
+/* Leadership: CEO only. Round photo with text beside it; slides in once on scroll, then stays. */
+.ceo{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,6vw,96px);align-items:center}
 .ceo.nophoto{grid-template-columns:1fr}
-.ceo-ph img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top}
-.ceo-tx h2{margin:16px 0 20px;font-size:clamp(40px,6.4vw,96px)}
+.ceo-ph{width:clamp(130px,28vw,360px);aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 clamp(5px,.8vw,10px) #fff,0 0 0 clamp(6px,.9vw,11px) rgba(200,16,46,.85)}
+.ceo-ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.ceo-tx h2{margin:14px 0 16px;font-size:clamp(30px,6vw,92px)}
 .ceo-role{color:var(--red)!important;margin-bottom:8px}
-@media (max-width:900px){.ceo{grid-template-columns:1fr}.ceo-ph{max-width:360px}}
+.ceo-tx .eyebrow{font-size:clamp(10px,1.4vw,12px)}
+.ceo-ph.rv{transform:translateX(-90px) scale(.92);transition-duration:1.1s}
+.ceo-tx.rv{transform:translateX(90px);transition-duration:1.1s;transition-delay:.12s}
+.ceo-ph.rv.in,.ceo-tx.rv.in{transform:none}
+@media (prefers-reduced-motion:reduce){.ceo-ph.rv,.ceo-tx.rv{transform:none}}
