@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { company as C, projects, services, steps, values } from './data.js'
+import MoreWork from './MoreWork.jsx'
 
 const nav = [
   ['Home', '#home'],
@@ -398,6 +399,7 @@ export default function App() {
             <Hero />
             <Intro />
             <Projects />
+            <MoreWork />
             <Services />
             <Process />
             <Values />

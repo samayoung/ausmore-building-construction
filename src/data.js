@@ -29,7 +29,7 @@ export const projects = [
     title: "Judges' Quarters",
     category: 'Construction / Government Project',
     status: 'Ongoing',
-    location: 'Akwa Ibom State, Nigeria',
+    location: 'Ring Road, Uyo, Akwa Ibom State',
     year: '',
     description:
       'An ongoing government development project focused on quality workmanship, structural integrity, efficient project management and timely delivery in accordance with development standards.',
@@ -41,7 +41,7 @@ export const projects = [
     title: 'Church Extension & Renovation',
     category: 'Renovation',
     status: 'Completed',
-    location: 'Nigeria',
+    location: 'Four Lanes, Uyo, Akwa Ibom State',
     year: '',
     description:
       'A church extension and renovation project involving the improvement and expansion of an existing worship environment while maintaining functionality, architectural character and quality workmanship.',
@@ -49,6 +49,14 @@ export const projects = [
     images: [2, 3, 4, 5].map((n) => img('church-renovation', n)),
   },
 ]
+
+/* More work: drop photos named other-01.jpg ... other-12.jpg into public/images/other/.
+   Add a title/location below to caption a photo. Slots without a photo stay hidden. */
+export const otherWork = Array.from({ length: 12 }, (_, i) => ({
+  src: `/images/other/other-${String(i + 1).padStart(2, '0')}.jpg`,
+  title: '',
+  location: '',
+}))
 
 export const services = [
   {
