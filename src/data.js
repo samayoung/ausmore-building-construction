@@ -1,10 +1,10 @@
 export const company = {
   name: 'Ausmore Building & Construction Services Limited',
   rc: '7569789',
-  phone: '0806 164 5497',
-  tel: 'tel:+2348061645497',
+  phone: '0806 165 4897',
+  tel: 'tel:+2348061654897',
   email: 'ausmoreconstructionservices@gmail.com',
-  whatsapp: 'https://wa.me/2348061645497',
+  whatsapp: 'https://wa.me/2348061654897',
   address: ['113 Edet Akpan Avenue,', 'Uyo, Akwa Ibom State,', 'Nigeria'],
   ceo: 'Augustine Udim',
 }
