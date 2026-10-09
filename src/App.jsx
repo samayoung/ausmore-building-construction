@@ -263,14 +263,31 @@ function About() {
             <p>We combine design thinking with practical construction knowledge to help clients move from concept to completion with confidence.</p>
             <p className="tags">Trust. Transparency. Professionalism. Quality. Speed. Reliability.</p>
           </div>
-          <div className="lead-by rv">
-            <span className="eyebrow">Leadership</span>
-            <strong>{C.ceo}</strong>
-            <span className="eyebrow">CEO</span>
-          </div>
           <address className="rv eyebrow">
             {C.address.map((l) => <span key={l}>{l}<br /></span>)}
           </address>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* CEO only. Photo: public/images/team/ceo.jpg (the layout adapts if it is missing). */
+function Leadership() {
+  const [ok, setOk] = useState(true)
+  return (
+    <section id="leadership">
+      <div className={`wrap ceo ${ok ? '' : 'nophoto'}`}>
+        {ok && (
+          <div className="ceo-ph rv">
+            <img src="/images/team/ceo.jpg" alt={`${C.ceo}, CEO of Ausmore`} loading="lazy" decoding="async" onError={() => setOk(false)} />
+          </div>
+        )}
+        <div className="ceo-tx rv">
+          <p className="eyebrow">Leadership</p>
+          <h2>{C.ceo}</h2>
+          <p className="eyebrow ceo-role">CEO</p>
+          <p className="eyebrow">Ausmore Building &amp; Construction Services Limited</p>
         </div>
       </div>
     </section>
@@ -404,6 +421,7 @@ export default function App() {
             <Process />
             <Values />
             <About />
+            <Leadership />
           </>
         )}
         <Contact />

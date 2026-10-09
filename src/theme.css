@@ -39,3 +39,11 @@ section + section,main > section + a{border-top:1px solid rgba(7,17,31,.08)}
 .ow img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#0d2340}
 .ow figcaption{margin-top:10px;color:#5a6b85}
 @media (max-width:900px){.ow-grid{grid-template-columns:1fr 1fr;gap:12px}}
+
+/* Leadership: CEO only */
+.ceo{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:clamp(32px,6vw,96px);align-items:end}
+.ceo.nophoto{grid-template-columns:1fr}
+.ceo-ph img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top}
+.ceo-tx h2{margin:16px 0 20px;font-size:clamp(40px,6.4vw,96px)}
+.ceo-role{color:var(--red)!important;margin-bottom:8px}
+@media (max-width:900px){.ceo{grid-template-columns:1fr}.ceo-ph{max-width:360px}}
